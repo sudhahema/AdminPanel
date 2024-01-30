@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./assests/scss/app.scss";
+import Register from './component/UserRole/Register';
+import Login from './component/UserRole/Login';
+import AdminPanel from './component/Admin/AdminPanel';
+import BottomSheet from './component/BottomSheet';
+import Create from './component/CurdOperation/CreateData';
+import ReadData from './component/CurdOperation/ReadData';
+import UpdataData from './component/CurdOperation/UpdataData';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <BrowserRouter>
+   <Routes>
+   <Route path='/' element={<Register />} />
+    <Route path='/admin' element={<AdminPanel />} />
+    <Route path='/login' element={<Login />} />
+    <Route path='/bottomsheet' element={<BottomSheet />} />
+    <Route path='/create' element={<Create />} />
+    <Route path='/read' element={<ReadData />} />
+    <Route path='/update' element={<UpdataData />} />
+   </Routes>
+   </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
+

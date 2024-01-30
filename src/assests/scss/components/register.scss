@@ -1,0 +1,43 @@
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+
+    .content_wrapper{
+        display: flex;
+        flex-direction: column;
+        // padding: 10px;
+    }
+    .text-input{
+        padding: 15px;
+        margin: 7px 0;
+    }
+    .btn{
+    padding: 10px;
+    cursor: pointer;
+    background: #8080804a;
+    border: none;
+    border-radius: 5px;
+    }
+   .change{
+    color: #0000ff85;
+    margin: 0;
+   }
+   .login_btn{
+    background: #80808063;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+   }
+   .main_wrapper{
+    width: 30%;
+   }
+   .bottom_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+}

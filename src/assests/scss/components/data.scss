@@ -1,0 +1,137 @@
+.data_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: column;
+}
+.create-form label {
+  color: rgb(19, 15, 15) !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px !important;
+}
+.create-form input {
+  padding: 5px;
+  margin: 10px;
+}
+.btn {
+  padding: 5px;
+  background: #80808059;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+// table {
+//     border: 2px solid black;
+//     width: 800px;
+//     height: 100px;
+//     margin: 10px 0;
+// }
+
+// th {
+//     border: 2px solid black;
+//     padding: 10px
+// }
+
+// td {
+//     text-align: center;
+// }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: #151529;
+  text-align: left;
+  padding: 10px;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dataTable {
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  object-fit: contain;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addbtn {
+  padding: 10px;
+  color: white;
+  background: #151529;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dtaContainer {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  object-fit: contain;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+// .dataTable p {
+//   padding: 15px;
+// }
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  gap: 20px;
+}
+
+//update
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.align_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(43, 19, 91, 0.9192051820728291) 100%
+  );
+}
